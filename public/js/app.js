@@ -6,11 +6,11 @@
      e.preventDefault()
      const location = search.value
      msg2.textContent = ''
+
      fetch('/weather?address=' + location).then((response) => {
          response.json().then((data) => {
              if (data.error) {
                  msg1.textContent = data.error
-
 
              } else {
                  msg1.textContent = data.location
