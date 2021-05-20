@@ -11,6 +11,7 @@
              if (data.error) {
                  msg1.textContent = data.error
 
+
              } else {
                  msg1.textContent = data.location
                  msg2.textContent = data.forecast
